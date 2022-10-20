@@ -18,15 +18,17 @@ namespace zekat_hesaplama
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {   
+        {
+            double euro;
             double dolarAltinGr;
             double dolermiktari;
             double ZekatMiktari;
             double TLAltinGr;
             double toplamMalMiktariAltinGr;
+            euro = Convert.ToDouble(textBox3.Text)/53;
             TLAltinGr = Convert.ToDouble(textBox1.Text)/975;
             dolarAltinGr = Convert.ToDouble(textBox2.Text) / 52;
-            toplamMalMiktariAltinGr = TLAltinGr + dolarAltinGr;
+            toplamMalMiktariAltinGr = TLAltinGr + dolarAltinGr+euro;
 
 
               
