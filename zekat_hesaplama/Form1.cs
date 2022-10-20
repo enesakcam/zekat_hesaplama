@@ -16,5 +16,26 @@ namespace zekat_hesaplama
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double ZekatMiktari;
+            double zekatAltinGr;
+            zekatAltinGr = Convert.ToDouble(textBox1.Text)/975;
+            if (zekatAltinGr >= 80.18)
+            {
+                ZekatMiktari = (zekatAltinGr / 40) * 975;
+                MessageBox.Show("zekat miktarı" + ZekatMiktari.ToString());
+            }
+            else
+            {
+                MessageBox.Show("zekat vermek için paranız yeterli değil");
+            }
+
+        }
+        
+        
+          
+        
     }
 }
