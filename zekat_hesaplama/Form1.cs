@@ -29,16 +29,16 @@ namespace zekat_hesaplama
             toplamMalMiktariAltinGr = TLAltinGr + dolarAltinGr;
 
 
-                MessageBox.Show("zekat miktarı" + toplamMalMiktariAltinGr.ToString());
+              
             
             if (toplamMalMiktariAltinGr >= 80.18)
             {
                 ZekatMiktari = (toplamMalMiktariAltinGr / 40) * 975;
-                MessageBox.Show("zekat miktarı" + ZekatMiktari.ToString());
+                MessageBox.Show(" Zekat vermeniz gereken miktar : " + ZekatMiktari.ToString()+"TL");
             }
             else
             {
-                MessageBox.Show("Zekat vermenize gerek yoktur.");
+                MessageBox.Show("Zekat vermenize gerek yoktur. ");
             }
 
         }
